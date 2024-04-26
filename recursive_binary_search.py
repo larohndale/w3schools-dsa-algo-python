@@ -1,8 +1,9 @@
-# Recursive Binary Search
-# Recursive function is a function that calls itself 
-# A number of times a recursive function calls itself is Recursion Depth
-# Iterate usually means a loop but recursion is slightly different as it has stopping points
-# Binary Search is runs at O(log n) logarithmic time constant space
+"""
+Recursive Binary Search:
+Recursive function is a function that calls itself 
+A number of times a recursive function calls itself is Recursion Depth
+Iterate usually means a loop but recursion is slightly different as it has stopping points
+"""
 
 def recursive_binary_search(list,target):
     # Base Case
@@ -29,3 +30,7 @@ verify(result)
 result = recursive_binary_search(numbers,6)
 verify(result)
 
+"""
+Time Complexity:
+ Binary Search is runs at O(log n) logarithmic time constant space
+"""

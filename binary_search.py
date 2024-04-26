@@ -1,6 +1,10 @@
-# Binary Search Algorithm relies on the fact the list has to be sorted*
-# If our list is not sorted binary search may return None 
-# Binary Search is constant or O(1) i.e. O(n) which is logarithmic
+"""
+Binary Search Algorithm:
+Searches through an array and returns the index of the value it searches for and relies on the fact the list has to be sorted
+
+If our list is not sorted binary search may return None 
+ """
+
 def binary_search(list,target):
     # Constant Runtime
     first = 0
@@ -35,4 +39,22 @@ result = binary_search(numbers, 12)
 verify(result)
 result = binary_search(numbers, 6)
 verify(result)
-    
+
+"""
+Time Complexity:
+Each time Binary Search checks a new value to see if it is the target value, the search area is halved.
+
+This means that even in the worst case scenario where Binary Search cannot find the target value, it still only needs 
+log
+2
+n
+ comparisons to look through a sorted array of 
+n
+ values.
+
+Time complexity for Binary Search is
+
+O(log2n)
+
+Binary Search is constant or O(1) i.e. O(n) which is logarithmic
+"""    

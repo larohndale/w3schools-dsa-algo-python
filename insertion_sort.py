@@ -1,5 +1,6 @@
 """
-Insertion Sort
+Insertion Sort:
+
 The Insertion Sort algorithm uses one part of the array to hold the sorted values, and the other part of the array to hold values that are not sorted yet.
 The algorithm takes one value at a time from the unsorted part of the array and puts it into the right place in the sorted part of the array, until the array is sorted.
 """
@@ -34,3 +35,14 @@ for i in range(1,n):
     
 print("Improved sorted array: ", array2)
 
+"""
+Time Complexity:
+
+On average, each value must be compared to about n/2 other values to find out where to insert it.
+
+And Selection Sort must run the loop to insert a value in its correct place approximately n times.
+
+We get time complexity for Insertion Sort:
+
+O(n2⋅n)= O(n2)
+"""

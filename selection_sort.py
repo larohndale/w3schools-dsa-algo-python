@@ -1,3 +1,10 @@
+"""
+Selection Sort:
+Goes through all elements in an array, finds the lowest value, and moves it to the front of the array, and does this over and over until the array is sorted.
+
+
+"""
+
 # Selection Sort Implementation
 my_array = [64, 34, 25, 5, 22, 11, 90, 12]
 
@@ -32,3 +39,19 @@ for i in range(n):
     
 print("Swapped Sorted Array: ", my_array_swap)
     
+"""
+Time Complexity:
+
+Selection Sort goes through an array of n values n−1 times. This is because when the algorithm has sorted all values except the last, the last value must also be in its correct place.
+
+The first time the algorithm runs through the array, every value is compared to find out which one is the lowest.
+
+The second time the algorithm runs through the array, every value except the first value is compared to find out which is the lowest.
+
+And in this way the unsorted part of the array becomes shorter and shorter until the sorting is done. So on average, n/2 elements are considered when the algorithm goes through the array finding the lowest value and moving it to the front of the array.
+
+Using Big O notation to describe the time complexity for the Selection Sort algorithm, we get:
+
+O(1/2⋅n2)= O(n2)
+
+"""
